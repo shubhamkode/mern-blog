@@ -1,0 +1,17 @@
+#!/usr/bin/bash
+
+set -xe
+
+# Getting all Users
+curl  http://localhost:8000/api/users
+
+# Creating an User
+# curl -X POST -H "Content-Type: application/json" -d '{"name":"Shubham", "email":"shubhamkode@gmail.com"}' http://localhost:8000/api/user
+
+# Updating an User
+# curl -X PATCH -H "Content-Type: application/json" -d '{"name":"Saurav", "email":"saurav@gmail.com"}' http://localhost:8000/api/user/2
+
+#Deleting an User
+curl -X DELETE http://localhost:8000/api/user/2
+
+curl  http://localhost:8000/api/users
