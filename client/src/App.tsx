@@ -1,7 +1,11 @@
+import { Routes, Route } from "react-router-dom";
+import { HomePage } from "./utils/pages";
+
 const App = () => {
   return (
-    <div className="w-screen h-screen bg-orange-50">
-    </div>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+    </Routes>
   )
 }
 
